@@ -1,0 +1,81 @@
+\documentclass{article}
+    \usepackage[utf8]{inputenc} %caratteri speciali tastiera come "ç"
+    \usepackage{lmodern}
+    \usepackage[T1]{fontenc} %codifica font 
+    \usepackage{calligra}
+    % \usepackage{emerald}
+    \usepackage[italian]{babel} %lingua del documento
+    \usepackage{graphicx}
+    \usepackage{listings}
+    \usepackage{color}
+    \definecolor{lightgray}{gray}{0.9}
+    \usepackage{geometry}    
+    \setlength{\parindent}{5mm}
+    \linespread{1.5}
+    \geometry{a4paper, left=1.5cm, right=1.5cm, top=2.5cm, bottom=2cm}
+    \usepackage{titlesec}
+    \titleformat{\section}
+    [hang]
+    {\centering\bfseries\em\fontsize{35}{1}\selectfont}
+    {\thesection.}{0.5em}{\vspace{0.5ex}}[\vspace{0.5ex}]
+    \titleformat{\subsection}
+    [hang]
+    {\bfseries\large\sffamily}
+    {\thesection.}{0.5em}{}
+    % \usefont{<encoding>}{<family>}{<series>}{<shape>}
+    % \usefont{T1}{caligrafa}{}{} font corsivo per firme
+    % \includegraphics[scale=0.6]{immagine} per inserire immagini
+    % \fontsize{}{}\selectfont per selzionare la grandezza del font
+    % \vfill per il fondo pagina nella pagina del titolo
+    % \par\vspace{3cm} serve per un nuovo paragrafo e l'interlinea
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \includegraphics[]{img/roImg.jpeg}
+    \par\vspace{4cm}
+    {\fontsize{60}{1}\selectfont\usefont{T1}{emerald}{}{} Ricerca Operativa}
+    \par\vspace{3cm}
+    {\usefont{T1}{calligra}{}{} \fontsize{50}{1}\selectfont Mihai Eni}
+    \vfill
+    {\large{2018/2019}}
+    \end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Introduzione}
+    \subsection{Cosa significa ottimizzare}
+        Cercare di ottenere il miglior risultato con il minimo sforzo, impiegare meno tempo possibile per compiere qualche incarico assegnatoci e sfruttare al meglio le risorse messe a disposizione. Avendo un numero di componenti limitato è abbastanza semplice trovare tutte le soluzioni ammissibili e decidere qualle sia la migliore. Certamente è meno semplice riuscire a certificare quale sia la soluzione migliore in assoluto, quantificare il valore delle risorse o valutare la stabilità della soluzione di fronte a variazioni, senza l'utilizzo di strumneti matematici.
+        
+    \subsection{Ricerca Operativa}
+        La ricerca operatica ha come oggetto lo studio e la messa a punto di metodologie e strumenti quantitativi per la soluzione di problemi decisionali. È Nata durante in ambito militare durante la seconda guerra mondiale e ha trovato applicazione in svariati settori. Attualmente la ricerca operativa è diventato uno strumento fondamentale per supportare i processi decisionali. I problemi affrontati sono detti di \textit{ottimizzazione}\footnote{un \textbf{problema di ottimizzazione} è il problema di trovare la migliore soluzione fra tutte le soluzioni fattibili}.
+    
+    \subsection{Come affrontare un problema di ottimizzazione}
+        Durante la vita quotidiana siamo abituati a trovarci di fronte a problemi di ottimizzazione ad esempio trovare il percorso minimo per andare a lavoro. Ovviamente per risolvere i problemi quotidiani non c'è bisogno degli strumenti quantitativi messi a disposizione dalla ricerca operativa, ma per problemi più complessi e di più vasto impatto questi strumenti non possono essere. 
+        \paragraph{Processo decisionale}
+            \begin{itemize}
+                \item individuazione del problema decisionale;
+                \item analisi della realtà e raccolta dei dati;
+                \item costruzione del modello come astrazione del problema reale;
+                \item determinazione di una o più soluzioni;
+                \item analisi dei risultati ottenuti e loro interpretazione nel caso reale.
+                \end{itemize}
+            Le 5 fasi non sono necessariamente in sequenza, anzi spesso i risultati di una fase suggeriscono una modifica delle scelte fatte in precedenza.
+    \subsection{Modello}
+        Il modello è una astrazione che permette di descrivere in termini "matematici" le caratteristiche salienti del problema che si vuole studiare e risolvere. 
+        \paragraph{Formulazione di un modello}
+            Nella fomulazione di un modello i seguenti 3 punti sono di fondamentale importanza:
+            \begin{enumerate}
+                \item individuazione delle \textit{decisioni che interessano il problema}. In un modello matematico le decisioni vengono rapresentate da \textbf{variabili decisionali};
+                \item determinazione dell'\textit{obiettivo} o degli obiettivi da ottimizzare. In generale è possibile esprimere l'obiettivo come una funzione delle varibaili decisionali detta \textbf{funzione obiettivo};
+                \item definizioni delle \textit{soluzioni ammissibili}. Si vogliono in pratica esprimere le "relazioni" che definiscono il problema decisionale. In genere queste relazioni vengono chiamate \textbf{vincoli del problema}.
+            \end{enumerate}
+        \paragraph{Classi di modelli}
+            I modelli vengono suddivisi nelle seguenti tre classi principali:
+            \begin{description}
+                \item [modelli di programmazione matematica]:
+                \item [modelli di teoria dei giochi]:
+                \item [modelli di simulazione]:
+                \end{description}
+\end{document}

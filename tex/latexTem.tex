@@ -1,0 +1,42 @@
+\documentclass{article}
+    \usepackage[utf8]{inputenc} %caratteri speciali tastiera come "ç"
+    \usepackage{lmodern}
+    \usepackage[T1]{fontenc} %codifica font 
+    \usepackage{calligra}
+    % \usepackage{emerald}
+    \usepackage[italian]{babel} %lingua del documento
+    \usepackage{graphicx}
+    \usepackage{listings}
+    \usepackage{color}
+    \definecolor{lightgray}{gray}{0.9}
+    \usepackage{geometry}    
+    \setlength{\parindent}{5mm}
+    \linespread{1.5}
+    \geometry{a4paper, left=1.5cm, right=1.5cm, top=2.5cm, bottom=2cm}
+    \usepackage{titlesec}
+    \titleformat{\section}
+    [hang]
+    {\bfseries\centering\Large\itshape}
+    {\thesection.}{0.5em}{\vspace{0.5ex}}[\vspace{0.5ex}]
+    \titleformat{\paragraph}
+    [wrap]
+    {\normalfont\bfseries}
+    {\thesection.}{0.5em}{} 
+    % \usefont{<encoding>}{<family>}{<series>}{<shape>}
+    % \usefont{T1}{caligrafa}{}{} font corsivo per firme
+    % \includegraphics[scale=0.6]{immagine} per inserire immagini
+    % \fontsize{}{}\selectfont per selzionare la grandezza del font
+    % \vfill per il fondo pagina nella pagina del titolo
+    % \par\vspace{3cm} serve per un nuovo paragrafo e l'interlinea
+
+\begin{document}
+    \begin{titlepage}
+        \centering
+        {\fontsize{60}{1}\selectfont\usefont{T1}{emerald}{}{} font carino per titoli}
+        \par\vspace{5cm}
+        {\usefont{T1}{calligra}{}{} \fontsize{50}{1}\selectfont font corsivo per firme}
+        \vfill
+        {\large{data}}
+    \end{titlepage}
+
+\end{document}
